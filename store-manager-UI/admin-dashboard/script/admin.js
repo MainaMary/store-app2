@@ -20,7 +20,7 @@ admin.addEventListener('click',()=>{
 })
 closeModal.addEventListener('click',()=>{
     modal.classList.remove('open')
-<<<<<<< HEAD
+
 })
 //Chart JS
 const stockPop= document.getElementById('bar');
@@ -73,6 +73,5 @@ const pie = new Chart(salesPop, {
     
 
 })
-=======
-})
->>>>>>> ft/login-page
+
+

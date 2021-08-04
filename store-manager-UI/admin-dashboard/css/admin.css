@@ -6,12 +6,10 @@
     box-sizing: border-box;
 }
 :root{
-<<<<<<< HEAD
     --fill: rgb(5, 0, 72);
     --yellow: #ffff00;
-=======
-    --fill: #050048;
->>>>>>> ft/login-page
+
+    
     
 }
 body{
@@ -26,7 +24,6 @@ body{
     height: 10vh;
     align-items: center;
     padding: 0 20px;
-<<<<<<< HEAD
     position: fixed;
     width: 100%;
     
@@ -34,8 +31,6 @@ body{
 .navbar.sticky{
     background-color: #777;
     z-index: 20;
-=======
->>>>>>> ft/login-page
 }
 .nav-menu{
     display: flex;
@@ -59,16 +54,14 @@ body{
     font-size: 40px;
     color: #777;
 }
-<<<<<<< HEAD
+
 .admin-profile{
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 10%;
 }
-=======
 
->>>>>>> ft/login-page
 
 /* side navigation */
 .side-nav{
@@ -135,11 +128,11 @@ body{
 }
 .side-nav ul li a:hover{
     background-color: var(--fill);
-<<<<<<< HEAD
+
     color: rgb(255, 255, 0);
-=======
+
     color: yellow;
->>>>>>> ft/login-page
+
 }
 .side-nav ul li a i{
     height: 50px;
@@ -152,11 +145,9 @@ body{
 /* main wrapper */
 .main-wrapper{
     display: flex;
-<<<<<<< HEAD
+
     padding-top: 10vh;
-=======
->>>>>>> ft/login-page
-    
+
 }
 
 .content-wrapper{
@@ -184,17 +175,17 @@ left: 200px;
  border-radius: 5px;
 }
 .categories{
-<<<<<<< HEAD
+
     border-left: 5px solid rgb(0, 128, 0);
 }
 .category p{
     color: #008000;
-=======
+
     border-left: 5px solid green;
 }
 .category p{
     color: green;
->>>>>>> ft/login-page
+
     font-size: 20px;
 }
 .products{
@@ -205,7 +196,7 @@ left: 200px;
     font-size: 20px;
 }
 .users-profile{
-<<<<<<< HEAD
+
     border-left: 5px solid var(--yellow);
 }
 .users p{
@@ -234,15 +225,15 @@ left: 200px;
     padding: 10px 100px;
 }
 
-=======
-    border-left: 5px solid yellow;
-}
+
+    /* border-left: 5px solid yellow; */
+
 .users p{
     color: yellow;
     font-size: 20px;
 }
 
->>>>>>> ft/login-page
+
 /* Modal wrapper */
 .modal{
     position: absolute;
@@ -252,15 +243,13 @@ left: 200px;
     width: 250px;
     padding: 20px 20px;
     display: none;
-<<<<<<< HEAD
-    background-color: #fff;
-=======
->>>>>>> ft/login-page
+
+    background-color: #ffff
     
     
     
 }
-<<<<<<< HEAD
+
 @keyframes face-slide-in {
     0%{
     right: -1000px;
@@ -272,10 +261,10 @@ left: 200px;
 .modal.open{
     display: block;
     animation: face-slide-in 0.3s ease-in-out;
-=======
+}
 .modal.open{
     display: block;
->>>>>>> ft/login-page
+
 
 }
 .modal.close{
@@ -322,11 +311,11 @@ margin-bottom: 20px;
     outline: none;
     border: none;
     background-color: var(--fill);
-<<<<<<< HEAD
+
     color: var(--yellow);
-=======
+
     color: yellow;
->>>>>>> ft/login-page
+
     border-radius: 50px;
 }
 .main-title h3{
@@ -337,13 +326,13 @@ margin-bottom: 20px;
         width: 50%;
 
     }
-<<<<<<< HEAD
+
     .main-title,
     .layout{
         flex-direction: column;
     }
-=======
->>>>>>> ft/login-page
+
+
     .content-wrapper{
         left: 0;
         width: 100%;
@@ -361,11 +350,10 @@ margin-bottom: 20px;
     .content-wrapper{
         margin-left: 0;
     }
-<<<<<<< HEAD
+
     /* chart js */
     .chart-js{
         flex-direction: column;
     }
-=======
->>>>>>> ft/login-page
+
 }
