@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/admin.css" />
+   <link rel="stylesheet" href="../css/products.css"/>
+   <script src="../script/users-management.js" defer></script>
+</head>
+  <body>
+    <nav class="navbar">
+        <div class="nav-menu">
+            <div class="harmburger">
+                <i class="fas fa-bars menu"></i>
+            </div>
+            <div class="logo">
+                <h3><span class='letter'>S</span>tore App</h3>
+            </div>
+        </div>
+        <div class="admin-profile">
+            <span>Admin</span>
+            <i class="fas fa-user-circle admin-icon"></i>
+        </div>
+    </nav>
+    <div class="main-wrapper">
+        <div class="side-nav">
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <a href="../admin.html">
+                        <span class="icon"><i class="fas fa-home"></i></i></span>
+                        <span class="title">Dashboard</span>
+
+                    </a>
+                    <span class="tooltip">Dashboard</span>
+                </li>
+                <li class="list-group-item">
+                    <a href="./category.html">
+                        <span class="icon"><i class="fas fa-th"></i></span>
+                        <span class="title">Categories</span>
+
+                    </a>
+                    <span class="tooltip">Categories</span>
+                </li>
+                <li class="list-group-item">
+                    <a href="./products.html">
+                        <span class="icon"><i class="fas fa-shopping-bag"></i></span>
+                        <span class="title">Products</span>
+
+                    </a>
+                    <span class="tooltip">Products</span>
+                </li>
+                <li class="list-group-item">
+                    <a href="./sales.html">
+                        <span class="icon"><i class="fas fa-chart-line"></i></i></span>
+                        <span class="title">Sales Report</span>
+
+                    </a>
+                    <span class="tooltip">Report</span>
+                </li>
+                <li class="list-group-item">
+                    <a href="#">
+                        <span class="icon"><i class="fas fa-users"></i></span>
+                        <span class="title">Users</span>
+
+                    </a>
+                    <span class="tooltip">Users</span>
+                </li>
+                <li class="list-group-item">
+                    <a href="#">
+                        <span class="icon"><i class="fas fa-sign-out-alt"></i></span>
+                        <span class="title">Sign out</span>
+
+                    </a>
+                    <span class="tooltip">Sign out</span>
+                </li>
+
+            </ul>
+        </div>
+        <div class="content-wrapper">
+     <div class="top-div">
+        <div class="products">
+            <div class="product">
+                <p>Users</p>
+                <span class="number">4</span>
+            </div>
+            <div>
+                <span ><i class="fas fa-shopping-bag"></i></span>
+            </div>
+        </div>
+     </div>
+     <div class="products-card">
+         <div class="product-title-section">
+             <h3>Users</h3>
+             <div>
+                 <button class="add-product-btn add-user">Add User</button>
+             </div>
+         </div>
+         <div class="product-search-section">
+    
+             <div class="entries">
+                 <div>
+                    <span>Show</span> 
+                    <input type="number" class="number-entries">
+                    <span>entries</span>
+                 </div>
+                 <div>
+                     <label for="search">Search by username</label>
+                     <input type="text" class="search-product" />
+                 </div>
+                 
+             </div>
+         </div>
+         <table class='table'>
+             <thead>
+                 <th>ID</th>
+                 <th>Username</th>
+                 <th>User Role</th>
+                 <th>Status</th>
+                 <th>Edit</th>
+                 <th>Delete</th>
+             </thead>
+             <tbody>
+                 <tr>
+                     <td data-label= 'ID'>1</td>
+                     <td data-label='Username'>Christopher</td>
+                     <td data-label='User Role'>Admin</td>
+                     <td data-label='Status'>Active</td>
+                     <td data-label='Edit'>
+                         <button class="edit-product">Edit</button>
+                     </td>
+                     <td data-label='Delete'>
+                         <button class="delete-product">Delete</button>
+                     </td>
+                 </tr>
+                <tr>
+                     <td data-label= 'ID'>2</td>
+                     <td data-label='Username'>John Doe</td>
+                     <td data-label='User Role'>user</td>
+                     <td data-label='Status'>Active</td>
+                     <td data-label='Edit'>
+                         <button class="edit-product">Edit</button>
+                     </td>
+                     <td data-label='Delete'>
+                         <button class="delete-product">Delete</button>
+                     </td>
+                 </tr>
+                
+                 <tr>
+                    <td data-label= 'ID'>3</td>
+                    <td data-label='Username'>Oprah</td>
+                    <td data-label='User Role'>Admin</td>
+                    <td data-label='Status'>Active</td>
+                    <td data-label='Edit'>
+                        <button class="edit-product">Edit</button>
+                    </td>
+                    <td data-label='Delete'>
+                        <button class="delete-product">Delete</button>
+                    </td>
+                </tr>
+               
+                <tr>
+                    <td data-label= 'ID'>4</td>
+                    <td data-label='Username'>Kiana</td>
+                    <td data-label='User Role'>user</td>
+                    <td data-label='Status'>Active</td>
+                    <td data-label='Edit'>
+                        <button class="edit-product">Edit</button>
+                    </td>
+                    <td data-label='Delete'>
+                        <button class="delete-product">Delete</button>
+                    </td>
+                </tr>
+             </tbody>
+         </table>
+     </div>
+        </div>
+    </div>
+    <div class="modal">
+        <div class="modal-wrapper" style="z-index: 100;">
+            <div class="close-modal">
+                <i class="fas fa-times close-modal-icon"></i>
+            </div>
+            <div class="admin-name">
+                <p>John Doe</p>
+                <p>Admin</p>
+            </div>
+            <div class="profile-update ">
+                <div class="profile pop-up">
+                    <span class="profile-icon"><i class="far fa-user-circle"></i></span>
+                    <span><a href='./html/update-profile.html'>Update profile</a></span>
+                </div>
+                <div class="view pop-up">
+                    <span class="profile-icon pop-up"><i class="far fa-user-circle"></i></span>
+                    <span><a href='#'>View profile</a></span>
+                </div>
+               
+                <div class="change-password pop-up">
+                    <span class="profile-icon"><i class="fas fa-key"></i></span>
+                  <span class="change-passwrd">
+                      <a href=''>Change Password</a>
+                    </span>
+
+                </div>
+
+                <div class="change-password pop-up">
+                    <span class="profile-icon"><i class="fas fa-key"></i></span>
+                  <span class="change-passwrd">
+                      <a href=''>Log out</a>
+                    </span>
+
+                </div>
+            </div>
+            <div class="logout"></div>
+        </div>
+    </div>
+
+  </body>
+</html>

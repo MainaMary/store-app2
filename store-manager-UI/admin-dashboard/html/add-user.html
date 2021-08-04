@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add User</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous" />
+    <link rel="stylesheet" href="../css/admin.css" />
+    <link rel="stylesheet" href="../css/products.css" />
+    <script src="../script/add-user.js" defer></script>
+</head>
+<style>
+    .content-wrapper{
+    
+       
+        padding: 10px 50px;
+        
+    }
+    .new-user{
+        box-shadow: 0 0 3px #777;
+       
+        
+    }
+    .add-user-title{
+        padding: 10px 20px;
+        border-bottom: 2px solid darkblue;
+    }
+    form{
+        padding: 10px 20px;
+    }
+    form > div {
+        margin: 20px 0;
+    }
+    form div label{
+        display: block;
+        margin-bottom: 5px;
+    }
+    form div input[type='text'],
+    #user-role{
+        width: 30%;
+        height: 30px;
+        border-radius: 5px;
+        border: 1px solid #777;
+        outline: none;
+    }
+    .md-user-btn{
+        width: 10%;
+        border-radius: 50px;
+        border: none;
+        outline: none;
+        background-color: darkblue;
+        color: yellow;
+        padding: 5px;
+        text-align: center;
+        height: 30px;
+    }
+    @media screen and (max-width: 768px){
+        form div input[type='text'],
+        
+    #user-role{
+        width: 100%;
+    }
+    .md-user-btn{
+        width: 40%;
+    }
+
+    }
+</style>
+
+<body>
+    <nav class="navbar">
+        
+        <div class="nav-menu">
+            <div class="harmburger">
+                <i class="fas fa-bars menu"></i>
+            </div>
+            <div class="logo">
+                <h3><span class='letter'>S</span>tore App</h3>
+            </div>
+        </div>
+        <div class="admin-profile">
+            <span>Admin</span>
+            <i class="fas fa-user-circle admin-icon"></i>
+        </div>
+    </nav>
+    <div class="main-wrapper">
+        <div class="side-nav">
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <a href="../admin.html">
+                        <span class="icon"><i class="fas fa-home"></i></i></span>
+                        <span class="title">Dashboard</span>
+
+                    </a>
+                    <span class="tooltip">Dashboard</span>
+                </li>
+                <li class="list-group-item">
+                    <a href="./category.html">
+                        <span class="icon"><i class="fas fa-th"></i></span>
+                        <span class="title">Categories</span>
+
+                    </a>
+                    <span class="tooltip">Categories</span>
+                </li>
+                <li class="list-group-item">
+                    <a href="./products.html">
+                        <span class="icon"><i class="fas fa-shopping-bag"></i></span>
+                        <span class="title">Products</span>
+
+                    </a>
+                    <span class="tooltip">Products</span>
+                </li>
+                <li class="list-group-item">
+                    <a href="./sales.html">
+                        <span class="icon"><i class="fas fa-chart-line"></i></i></span>
+                        <span class="title">Sales Report</span>
+
+                    </a>
+                    <span class="tooltip">Report</span>
+                </li>
+                <li class="list-group-item">
+                    <a href="./users-management.html">
+                        <span class="icon"><i class="fas fa-users"></i></span>
+                        <span class="title">Users</span>
+
+                    </a>
+                    <span class="tooltip">Users</span>
+                </li>
+                <li class="list-group-item">
+                    <a href="#">
+                        <span class="icon"><i class="fas fa-sign-out-alt"></i></span>
+                        <span class="title">Sign out</span>
+
+                    </a>
+                    <span class="tooltip">Sign out</span>
+                </li>
+
+            </ul>
+        </div>
+        <div class="content-wrapper">
+            <div class="new-user">
+                <div class="add-user-title">
+                    <span><i class="fas fa-users"></i></span>
+                    <span>Add New user</span>
+                </div>
+                <div class="user-form">
+                    <form>
+                        <div>
+                            <label>Username</label>
+                            <input name='username'type="text" class="add-username" />
+                        </div>
+                        <div>
+                            <label>Password</label>
+                            <input name="password" type="text" class="add-userpswd" />
+                        </div>
+                        <div>
+                            <label>User Role</label>
+
+                            <select id="user-role" class="user-role" name="userRole" form="roleform">
+                                <option value="Admin">Admin</option>
+                                <option value="User">User</option>
+
+                            </select>
+
+                        </div>
+                        <div class="submit-new-user">
+                            <button class="newuser-btn md-user-btn">Add user</button>
+                            <button class="back-user-btn md-user-btn">Back</button>
+                           
+                        </div>
+
+
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

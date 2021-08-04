@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>update profile</title>
+    <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+    integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+    crossorigin="anonymous"
+  />
+</head>
+<style>
+   
+    *{
+        margin:0;
+        padding: 0;
+        box-sizing: border-box;
+
+    }
+    body{
+        position: relative;
+    }
+    .modal{
+        position: absolute;
+        top: 20px;
+        right:10px;
+        display: none;
+    }
+    .modal.active{
+        display: block;
+    }
+    .modal-wrapper{
+        box-shadow: 0 0 3px #777;
+        padding: 10px 20px;
+        width: 100%;
+        margin-top: 30px;
+    
+    }
+    div button{
+        padding: 5px;
+        width: 100px;
+        height: 30px;
+        outline: none;
+        background-color: blue;
+        color: #fff;
+        border: none;
+    }
+    .main-nav{
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 20px;
+    }
+</style>
+<body>
+    <div class="main-nav">
+        <h3>Update User profile</h3>
+        <button id="import-btn">Import Report</button>
+    </div>
+        <div class="modal">
+            <div class="modal-wrapper">
+                <div class="close-icon">
+                    <i class="fas fa-times"></i>
+                </div>
+                <p>Do you want to import a new stocka file?</p>
+            </div>
+        </div>Import Report
+
+        <script>
+
+            const modal= document.querySelector('.modal');
+            const btn= document.getElementById('import-btn');
+            const closeModal= document.querySelector('.close-icon');
+            btn.addEventListener('click', ()=>{
+         modal.classList.add('active');
+            })
+            closeModal.addEventListener('click',()=>{
+                modal.classList.remove('active')
+            })
+
+        </script>
+
+</body>
+</html>

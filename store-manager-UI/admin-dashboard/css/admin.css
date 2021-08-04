@@ -1,0 +1,371 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+<<<<<<< HEAD
+    --fill: rgb(5, 0, 72);
+    --yellow: #ffff00;
+=======
+    --fill: #050048;
+>>>>>>> ft/login-page
+    
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    position: relative;
+
+}
+/* Navbar section */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    height: 10vh;
+    align-items: center;
+    padding: 0 20px;
+<<<<<<< HEAD
+    position: fixed;
+    width: 100%;
+    
+}
+.navbar.sticky{
+    background-color: #777;
+    z-index: 20;
+=======
+>>>>>>> ft/login-page
+}
+.nav-menu{
+    display: flex;
+    width: 12%;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    font-style: italic;
+
+}
+.letter{
+    font-size: 30px;
+    font-weight: 500;
+    color: var(--fill);
+}
+.menu{
+    font-size: 26px;
+}
+.admin-icon{
+    font-size: 40px;
+    color: #777;
+}
+<<<<<<< HEAD
+.admin-profile{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 10%;
+}
+=======
+
+>>>>>>> ft/login-page
+
+/* side navigation */
+.side-nav{
+    width: 200px;
+    position: fixed;
+    background-color: var(--fill);
+    height: 90vh;
+    padding: 10px 24px;
+    box-shadow: 0 0 3px #777;
+
+}
+
+.side-nav.active{
+    width: 80px;
+}
+.side-nav.active ul li a .title{
+    opacity: 0;
+}
+.side-nav.active ul li{
+    padding: 15px 0;
+}
+.content-wrapper.active-wrapper{
+    width: calc(100% - 80px);
+    background-color: palevioletred;
+    left: 80px;
+    transition: all .2s ease-in-out;
+}
+.side-nav ul li{
+    position: relative;
+    list-style-type: none;
+    height: 50px;
+    line-height: 50px;
+    width: 100%;
+}
+.side-nav ul li .tooltip{
+    width: 100px;
+    height: 40px;
+    background-color: #fff;
+    box-shadow: 0 0 3px #777;
+    color: var(--fill);
+    position: absolute;
+    top: 0;
+    text-align: center;
+    left: 150px;
+    line-height: 35px;
+    opacity: 0;
+    transition: 0;
+    /* transform: translateY(-50%); */
+}
+.side-nav ul li:hover.tooltip{
+    transition: all .2s ease-in-out;
+    opacity: 1;
+    
+
+}
+.side-nav ul li a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: #777;
+    text-align: center;
+    transition: all .4s ease-in-out;
+  
+}
+.side-nav ul li a:hover{
+    background-color: var(--fill);
+<<<<<<< HEAD
+    color: rgb(255, 255, 0);
+=======
+    color: yellow;
+>>>>>>> ft/login-page
+}
+.side-nav ul li a i{
+    height: 50px;
+    line-height: 50px;
+    width: 50px;
+
+
+}
+
+/* main wrapper */
+.main-wrapper{
+    display: flex;
+<<<<<<< HEAD
+    padding-top: 10vh;
+=======
+>>>>>>> ft/login-page
+    
+}
+
+.content-wrapper{
+    position: absolute;
+width: calc(100% - 200px);
+left: 200px;
+}
+.layout{
+    margin-top: 40px;
+}
+.layout,
+.categories,
+.products,
+.users-profile{
+    display: flex;
+    justify-content: space-around;
+   align-items: center;
+}
+.categories,
+.products,
+.users-profile{
+ box-shadow: 0 0 3px #777;
+ width: 300px;
+ padding: 10px 0px;
+ border-radius: 5px;
+}
+.categories{
+<<<<<<< HEAD
+    border-left: 5px solid rgb(0, 128, 0);
+}
+.category p{
+    color: #008000;
+=======
+    border-left: 5px solid green;
+}
+.category p{
+    color: green;
+>>>>>>> ft/login-page
+    font-size: 20px;
+}
+.products{
+    border-left: 5px solid var(--fill);
+}
+.product p{
+    color : var(--fill);
+    font-size: 20px;
+}
+.users-profile{
+<<<<<<< HEAD
+    border-left: 5px solid var(--yellow);
+}
+.users p{
+    color: var(--yellow);
+    font-size: 20px;
+}
+
+/* chart JS */
+.chart-js{
+    display: flex;
+    justify-content: space-around;
+    padding: 0 20px;
+    margin-top: 40px;
+}
+.bar-graph,
+.pie-chart{
+    box-shadow: 0 0 3px #777;
+    width: 40%;
+    
+}
+.bar-graph{
+    width: 40%;
+    padding: 10px 20px;
+}
+.pie-chart{
+    padding: 10px 100px;
+}
+
+=======
+    border-left: 5px solid yellow;
+}
+.users p{
+    color: yellow;
+    font-size: 20px;
+}
+
+>>>>>>> ft/login-page
+/* Modal wrapper */
+.modal{
+    position: absolute;
+    top: 60px;
+    right: 40px;
+    box-shadow: 0 0 3px #777;
+    width: 250px;
+    padding: 20px 20px;
+    display: none;
+<<<<<<< HEAD
+    background-color: #fff;
+=======
+>>>>>>> ft/login-page
+    
+    
+    
+}
+<<<<<<< HEAD
+@keyframes face-slide-in {
+    0%{
+    right: -1000px;
+    }
+    100%{
+  right: 0;
+    }
+}
+.modal.open{
+    display: block;
+    animation: face-slide-in 0.3s ease-in-out;
+=======
+.modal.open{
+    display: block;
+>>>>>>> ft/login-page
+
+}
+.modal.close{
+    display: none;
+}
+.modal-wrapper .admin-name{
+margin-bottom: 20px;
+}
+.pop-up{
+    margin-bottom: 30px;
+    display: flex;
+}
+.close-modal{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+.close-modal-icon{
+    font-size: 20px;
+    color: #777;
+}
+.pop-up span a{
+    text-decoration: none;
+    margin-left: 20px;
+    color: #000;
+}
+.profile-icon{
+    font-size: 20px;
+    color: #777;
+}
+/* Content wrapper */
+.main-title{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    height: 40px;
+    align-items: center;
+    
+}
+.report-btn{
+    width: 150px;
+    height: 30px;
+    outline: none;
+    border: none;
+    background-color: var(--fill);
+<<<<<<< HEAD
+    color: var(--yellow);
+=======
+    color: yellow;
+>>>>>>> ft/login-page
+    border-radius: 50px;
+}
+.main-title h3{
+    font-size: 1.8em;
+}
+@media screen and (max-width: 768px){
+    .nav-menu{
+        width: 50%;
+
+    }
+<<<<<<< HEAD
+    .main-title,
+    .layout{
+        flex-direction: column;
+    }
+=======
+>>>>>>> ft/login-page
+    .content-wrapper{
+        left: 0;
+        width: 100%;
+    }
+    .side-nav.navLinks-active{
+        left: 0;
+        transition: all .2s ease-out;
+    }
+    .side-nav{
+        left: -1000px;
+    }
+    .title{
+        opacity: 1;
+    }
+    .content-wrapper{
+        margin-left: 0;
+    }
+<<<<<<< HEAD
+    /* chart js */
+    .chart-js{
+        flex-direction: column;
+    }
+=======
+>>>>>>> ft/login-page
+}
